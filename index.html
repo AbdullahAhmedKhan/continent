@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="shortcut icon" href="images/fav.png" type="image/x-icon">
+
+
+    <title>Continent-Info</title>
+
+    <style>
+        /* Google Font  */
+        @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+        body {
+            font-family: 'Rubik', sans-serif;
+            background: #fc4a1a;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #f7b733, #fc4a1a);
+            
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.2);
+            border-bottom-left-radius: 16px;
+            border-bottom-right-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="text-center py-3 shadow-sm bg-warning">
+        <img src="images/world.png" width="100" alt="">
+        <h3 class="text-uppercase mt-2">Continent Information</h3>
+    </div>
+
+
+    <div class="d-flex m-5 w-75 mx-auto">
+        <input class="form-control me-2" type="search" placeholder="Search countries" aria-label="Search">
+        <button class="btn btn-outline-success btn-dark text-white" type="submit">Search</button>
+    </div>
+    <div class="all-button container d-flex justify-content-center">
+        <div class="btn-group shadow-sm" role="group" aria-label="Basic mixed styles example">
+            <button id="asia" type="button" class="btn btn-light fw-bold">Asia</button>
+            <button id="europe" type="button" class="btn btn-light fw-bold">Europe</button>
+            <button id="americas" type="button" class="btn btn-light fw-bold">Americas</button>
+            <button id="africa" type="button" class="btn btn-light fw-bold">Africa</button>
+            <button id="oceania" type="button" class="btn btn-light fw-bold">Oceania</button>
+            <button id="all" type="button" class="btn btn-warning fw-bold">All</button>
+        </div>
+    </div>
+
+    <div id="countries" class="container row mx-auto">
+
+    </div>
+
+    <!-- JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
